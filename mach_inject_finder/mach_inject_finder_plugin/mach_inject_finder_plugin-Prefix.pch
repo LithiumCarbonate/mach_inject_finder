@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'mach_inject_finder_plugin' target in the 'mach_inject_finder_plugin' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

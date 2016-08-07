@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04E7518116D0B77A004F1BF4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E7518016D0B77A004F1BF4 /* Cocoa.framework */; };
+		04E7518B16D0B77A004F1BF4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04E7518916D0B77A004F1BF4 /* InfoPlist.strings */; };
+		04E7518D16D0B77A004F1BF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E7518C16D0B77A004F1BF4 /* main.m */; };
+		04E7519116D0B77A004F1BF4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 04E7518F16D0B77A004F1BF4 /* Credits.rtf */; };
+		04E7519416D0B77A004F1BF4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E7519316D0B77A004F1BF4 /* AppDelegate.m */; };
+		04E7519716D0B77A004F1BF4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E7519516D0B77A004F1BF4 /* MainMenu.xib */; };
+		04E751DE16D0B8D4004F1BF4 /* STPrivilegedTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E751DD16D0B8D4004F1BF4 /* STPrivilegedTask.m */; };
+		04E751E416D0BA24004F1BF4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E751E316D0BA24004F1BF4 /* Security.framework */; };
+		04E751E616D0BA54004F1BF4 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E751E516D0BA54004F1BF4 /* Carbon.framework */; };
+		04E7520516D0BDB4004F1BF4 /* mach_inject_finder.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 04E751CE16D0B7B7004F1BF4 /* mach_inject_finder.app */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04E751CD16D0B7B7004F1BF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04E751C916D0B7B6004F1BF4 /* mach_inject_finder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 04E751A816D0B7B6004F1BF4;
+			remoteInfo = mach_inject_finder;
+		};
+		04E7520616D0BDBE004F1BF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04E751C916D0B7B6004F1BF4 /* mach_inject_finder.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 04E751A716D0B7B6004F1BF4;
+			remoteInfo = mach_inject_finder;
+		};
+		394129531D27F87F00F145D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04E751C916D0B7B6004F1BF4 /* mach_inject_finder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 04E7522916D0C3E6004F1BF4;
+			remoteInfo = mach_inject_finder_plugin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04E7520316D0BB8C004F1BF4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				04E7520516D0BDB4004F1BF4 /* mach_inject_finder.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		04E7517C16D0B77A004F1BF4 /* mach_inject_finder_loader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mach_inject_finder_loader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04E7518016D0B77A004F1BF4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		04E7518316D0B77A004F1BF4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		04E7518416D0B77A004F1BF4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		04E7518516D0B77A004F1BF4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		04E7518816D0B77A004F1BF4 /* mach_inject_finder_loader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mach_inject_finder_loader-Info.plist"; sourceTree = "<group>"; };
+		04E7518A16D0B77A004F1BF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		04E7518C16D0B77A004F1BF4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04E7518E16D0B77A004F1BF4 /* mach_inject_finder_loader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mach_inject_finder_loader-Prefix.pch"; sourceTree = "<group>"; };
+		04E7519016D0B77A004F1BF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		04E7519216D0B77A004F1BF4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04E7519316D0B77A004F1BF4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04E7519616D0B77A004F1BF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		04E751C916D0B7B6004F1BF4 /* mach_inject_finder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mach_inject_finder.xcodeproj; path = mach_inject_finder/mach_inject_finder.xcodeproj; sourceTree = "<group>"; };
+		04E751DC16D0B8D4004F1BF4 /* STPrivilegedTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPrivilegedTask.h; sourceTree = "<group>"; };
+		04E751DD16D0B8D4004F1BF4 /* STPrivilegedTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPrivilegedTask.m; sourceTree = "<group>"; };
+		04E751E316D0BA24004F1BF4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		04E751E516D0BA54004F1BF4 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04E7517916D0B77A004F1BF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E751E616D0BA54004F1BF4 /* Carbon.framework in Frameworks */,
+				04E751E416D0BA24004F1BF4 /* Security.framework in Frameworks */,
+				04E7518116D0B77A004F1BF4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04E7517116D0B779004F1BF4 = {
+			isa = PBXGroup;
+			children = (
+				04E751C916D0B7B6004F1BF4 /* mach_inject_finder.xcodeproj */,
+				04E7518616D0B77A004F1BF4 /* mach_inject_finder_loader */,
+				04E7517F16D0B77A004F1BF4 /* Frameworks */,
+				04E7517D16D0B77A004F1BF4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04E7517D16D0B77A004F1BF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04E7517C16D0B77A004F1BF4 /* mach_inject_finder_loader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04E7517F16D0B77A004F1BF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04E751E516D0BA54004F1BF4 /* Carbon.framework */,
+				04E751E316D0BA24004F1BF4 /* Security.framework */,
+				04E7518016D0B77A004F1BF4 /* Cocoa.framework */,
+				04E7518216D0B77A004F1BF4 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04E7518216D0B77A004F1BF4 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04E7518316D0B77A004F1BF4 /* AppKit.framework */,
+				04E7518416D0B77A004F1BF4 /* CoreData.framework */,
+				04E7518516D0B77A004F1BF4 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		04E7518616D0B77A004F1BF4 /* mach_inject_finder_loader */ = {
+			isa = PBXGroup;
+			children = (
+				04E751DC16D0B8D4004F1BF4 /* STPrivilegedTask.h */,
+				04E751DD16D0B8D4004F1BF4 /* STPrivilegedTask.m */,
+				04E7519216D0B77A004F1BF4 /* AppDelegate.h */,
+				04E7519316D0B77A004F1BF4 /* AppDelegate.m */,
+				04E7519516D0B77A004F1BF4 /* MainMenu.xib */,
+				04E7518716D0B77A004F1BF4 /* Supporting Files */,
+			);
+			path = mach_inject_finder_loader;
+			sourceTree = "<group>";
+		};
+		04E7518716D0B77A004F1BF4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04E7518816D0B77A004F1BF4 /* mach_inject_finder_loader-Info.plist */,
+				04E7518916D0B77A004F1BF4 /* InfoPlist.strings */,
+				04E7518C16D0B77A004F1BF4 /* main.m */,
+				04E7518E16D0B77A004F1BF4 /* mach_inject_finder_loader-Prefix.pch */,
+				04E7518F16D0B77A004F1BF4 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04E751CA16D0B7B6004F1BF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04E751CE16D0B7B7004F1BF4 /* mach_inject_finder.app */,
+				394129541D27F87F00F145D0 /* mach_inject_finder_plugin.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04E7517B16D0B77A004F1BF4 /* mach_inject_finder_loader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04E7519A16D0B77A004F1BF4 /* Build configuration list for PBXNativeTarget "mach_inject_finder_loader" */;
+			buildPhases = (
+				04E7517816D0B77A004F1BF4 /* Sources */,
+				04E7517916D0B77A004F1BF4 /* Frameworks */,
+				04E7517A16D0B77A004F1BF4 /* Resources */,
+				04E7520316D0BB8C004F1BF4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04E7520716D0BDBE004F1BF4 /* PBXTargetDependency */,
+			);
+			name = mach_inject_finder_loader;
+			productName = mach_inject_finder_loader;
+			productReference = 04E7517C16D0B77A004F1BF4 /* mach_inject_finder_loader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04E7517316D0B779004F1BF4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "http://www.tanhao.me";
+			};
+			buildConfigurationList = 04E7517616D0B779004F1BF4 /* Build configuration list for PBXProject "mach_inject_finder_loader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 04E7517116D0B779004F1BF4;
+			productRefGroup = 04E7517D16D0B77A004F1BF4 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 04E751CA16D0B7B6004F1BF4 /* Products */;
+					ProjectRef = 04E751C916D0B7B6004F1BF4 /* mach_inject_finder.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				04E7517B16D0B77A004F1BF4 /* mach_inject_finder_loader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		04E751CE16D0B7B7004F1BF4 /* mach_inject_finder.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = mach_inject_finder.app;
+			remoteRef = 04E751CD16D0B7B7004F1BF4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		394129541D27F87F00F145D0 /* mach_inject_finder_plugin.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = mach_inject_finder_plugin.bundle;
+			remoteRef = 394129531D27F87F00F145D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04E7517A16D0B77A004F1BF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E7518B16D0B77A004F1BF4 /* InfoPlist.strings in Resources */,
+				04E7519116D0B77A004F1BF4 /* Credits.rtf in Resources */,
+				04E7519716D0B77A004F1BF4 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04E7517816D0B77A004F1BF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E7518D16D0B77A004F1BF4 /* main.m in Sources */,
+				04E7519416D0B77A004F1BF4 /* AppDelegate.m in Sources */,
+				04E751DE16D0B8D4004F1BF4 /* STPrivilegedTask.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04E7520716D0BDBE004F1BF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = mach_inject_finder;
+			targetProxy = 04E7520616D0BDBE004F1BF4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04E7518916D0B77A004F1BF4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04E7518A16D0B77A004F1BF4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		04E7518F16D0B77A004F1BF4 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04E7519016D0B77A004F1BF4 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		04E7519516D0B77A004F1BF4 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04E7519616D0B77A004F1BF4 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04E7519816D0B77A004F1BF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		04E7519916D0B77A004F1BF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		04E7519B16D0B77A004F1BF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mach_inject_finder_loader/mach_inject_finder_loader-Prefix.pch";
+				INFOPLIST_FILE = "mach_inject_finder_loader/mach_inject_finder_loader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		04E7519C16D0B77A004F1BF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mach_inject_finder_loader/mach_inject_finder_loader-Prefix.pch";
+				INFOPLIST_FILE = "mach_inject_finder_loader/mach_inject_finder_loader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04E7517616D0B779004F1BF4 /* Build configuration list for PBXProject "mach_inject_finder_loader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04E7519816D0B77A004F1BF4 /* Debug */,
+				04E7519916D0B77A004F1BF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04E7519A16D0B77A004F1BF4 /* Build configuration list for PBXNativeTarget "mach_inject_finder_loader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04E7519B16D0B77A004F1BF4 /* Debug */,
+				04E7519C16D0B77A004F1BF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04E7517316D0B779004F1BF4 /* Project object */;
+}

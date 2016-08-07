@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04E751AD16D0B7B6004F1BF4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E751AC16D0B7B6004F1BF4 /* Cocoa.framework */; };
+		04E751B716D0B7B6004F1BF4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04E751B516D0B7B6004F1BF4 /* InfoPlist.strings */; };
+		04E751B916D0B7B6004F1BF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E751B816D0B7B6004F1BF4 /* main.m */; };
+		04E751BD16D0B7B6004F1BF4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 04E751BB16D0B7B6004F1BF4 /* Credits.rtf */; };
+		04E751C016D0B7B6004F1BF4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E751BF16D0B7B6004F1BF4 /* AppDelegate.m */; };
+		04E751C316D0B7B6004F1BF4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E751C116D0B7B6004F1BF4 /* MainMenu.xib */; };
+		04E7521B16D0C0DF004F1BF4 /* mach_inject_bundle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E7521416D0BE59004F1BF4 /* mach_inject_bundle.framework */; };
+		04E7521C16D0C0E3004F1BF4 /* mach_inject_bundle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 04E7521416D0BE59004F1BF4 /* mach_inject_bundle.framework */; };
+		04E7522B16D0C3E7004F1BF4 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E7522A16D0C3E7004F1BF4 /* CoreFoundation.framework */; };
+		04E7523116D0C3E7004F1BF4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04E7522F16D0C3E7004F1BF4 /* InfoPlist.strings */; };
+		04E7523816D0C50C004F1BF4 /* Inject-PrincipalClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E7523716D0C50C004F1BF4 /* Inject-PrincipalClass.m */; };
+		04E7523916D0C591004F1BF4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E751AC16D0B7B6004F1BF4 /* Cocoa.framework */; };
+		04E7523D16D0C636004F1BF4 /* mach_inject_finder_plugin.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 04E7522916D0C3E6004F1BF4 /* mach_inject_finder_plugin.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04E7521316D0BE59004F1BF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04E7520816D0BE59004F1BF4 /* mach_inject_bundle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = mach_inject_bundle;
+		};
+		04E7521716D0C055004F1BF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04E7520816D0BE59004F1BF4 /* mach_inject_bundle.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = mach_inject_bundle;
+		};
+		04E7523A16D0C5E9004F1BF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04E7519F16D0B7B6004F1BF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04E7522816D0C3E6004F1BF4;
+			remoteInfo = mach_inject_finder_plugin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04E7521916D0C05E004F1BF4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				04E7521C16D0C0E3004F1BF4 /* mach_inject_bundle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04E7523C16D0C626004F1BF4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				04E7523D16D0C636004F1BF4 /* mach_inject_finder_plugin.bundle in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		04E751A816D0B7B6004F1BF4 /* mach_inject_finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mach_inject_finder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04E751AC16D0B7B6004F1BF4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		04E751AF16D0B7B6004F1BF4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		04E751B016D0B7B6004F1BF4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		04E751B116D0B7B6004F1BF4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		04E751B416D0B7B6004F1BF4 /* mach_inject_finder-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mach_inject_finder-Info.plist"; sourceTree = "<group>"; };
+		04E751B616D0B7B6004F1BF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		04E751B816D0B7B6004F1BF4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04E751BA16D0B7B6004F1BF4 /* mach_inject_finder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mach_inject_finder-Prefix.pch"; sourceTree = "<group>"; };
+		04E751BC16D0B7B6004F1BF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		04E751BE16D0B7B6004F1BF4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04E751BF16D0B7B6004F1BF4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04E751C216D0B7B6004F1BF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		04E7520816D0BE59004F1BF4 /* mach_inject_bundle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mach_inject_bundle.xcodeproj; path = ../mach_inject_bundle/mach_inject_bundle.xcodeproj; sourceTree = "<group>"; };
+		04E7522916D0C3E6004F1BF4 /* mach_inject_finder_plugin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mach_inject_finder_plugin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		04E7522A16D0C3E7004F1BF4 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		04E7522E16D0C3E7004F1BF4 /* mach_inject_finder_plugin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mach_inject_finder_plugin-Info.plist"; sourceTree = "<group>"; };
+		04E7523016D0C3E7004F1BF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		04E7523216D0C3E7004F1BF4 /* mach_inject_finder_plugin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mach_inject_finder_plugin-Prefix.pch"; sourceTree = "<group>"; };
+		04E7523616D0C50C004F1BF4 /* Inject-PrincipalClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Inject-PrincipalClass.h"; sourceTree = "<group>"; };
+		04E7523716D0C50C004F1BF4 /* Inject-PrincipalClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Inject-PrincipalClass.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04E751A516D0B7B6004F1BF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E7521B16D0C0DF004F1BF4 /* mach_inject_bundle.framework in Frameworks */,
+				04E751AD16D0B7B6004F1BF4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04E7522616D0C3E6004F1BF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E7522B16D0C3E7004F1BF4 /* CoreFoundation.framework in Frameworks */,
+				04E7523916D0C591004F1BF4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04E7519D16D0B7B6004F1BF4 = {
+			isa = PBXGroup;
+			children = (
+				04E7520816D0BE59004F1BF4 /* mach_inject_bundle.xcodeproj */,
+				04E751B216D0B7B6004F1BF4 /* mach_inject_finder */,
+				04E7522C16D0C3E7004F1BF4 /* mach_inject_finder_plugin */,
+				04E751AB16D0B7B6004F1BF4 /* Frameworks */,
+				04E751A916D0B7B6004F1BF4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04E751A916D0B7B6004F1BF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04E751A816D0B7B6004F1BF4 /* mach_inject_finder.app */,
+				04E7522916D0C3E6004F1BF4 /* mach_inject_finder_plugin.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04E751AB16D0B7B6004F1BF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04E751AC16D0B7B6004F1BF4 /* Cocoa.framework */,
+				04E7522A16D0C3E7004F1BF4 /* CoreFoundation.framework */,
+				04E751AE16D0B7B6004F1BF4 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04E751AE16D0B7B6004F1BF4 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04E751AF16D0B7B6004F1BF4 /* AppKit.framework */,
+				04E751B016D0B7B6004F1BF4 /* CoreData.framework */,
+				04E751B116D0B7B6004F1BF4 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		04E751B216D0B7B6004F1BF4 /* mach_inject_finder */ = {
+			isa = PBXGroup;
+			children = (
+				04E751BE16D0B7B6004F1BF4 /* AppDelegate.h */,
+				04E751BF16D0B7B6004F1BF4 /* AppDelegate.m */,
+				04E751C116D0B7B6004F1BF4 /* MainMenu.xib */,
+				04E751B316D0B7B6004F1BF4 /* Supporting Files */,
+			);
+			path = mach_inject_finder;
+			sourceTree = "<group>";
+		};
+		04E751B316D0B7B6004F1BF4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04E751B416D0B7B6004F1BF4 /* mach_inject_finder-Info.plist */,
+				04E751B516D0B7B6004F1BF4 /* InfoPlist.strings */,
+				04E751B816D0B7B6004F1BF4 /* main.m */,
+				04E751BA16D0B7B6004F1BF4 /* mach_inject_finder-Prefix.pch */,
+				04E751BB16D0B7B6004F1BF4 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04E7520916D0BE59004F1BF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04E7521416D0BE59004F1BF4 /* mach_inject_bundle.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04E7522C16D0C3E7004F1BF4 /* mach_inject_finder_plugin */ = {
+			isa = PBXGroup;
+			children = (
+				04E7523616D0C50C004F1BF4 /* Inject-PrincipalClass.h */,
+				04E7523716D0C50C004F1BF4 /* Inject-PrincipalClass.m */,
+				04E7522D16D0C3E7004F1BF4 /* Supporting Files */,
+			);
+			path = mach_inject_finder_plugin;
+			sourceTree = "<group>";
+		};
+		04E7522D16D0C3E7004F1BF4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04E7522E16D0C3E7004F1BF4 /* mach_inject_finder_plugin-Info.plist */,
+				04E7522F16D0C3E7004F1BF4 /* InfoPlist.strings */,
+				04E7523216D0C3E7004F1BF4 /* mach_inject_finder_plugin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04E751A716D0B7B6004F1BF4 /* mach_inject_finder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04E751C616D0B7B6004F1BF4 /* Build configuration list for PBXNativeTarget "mach_inject_finder" */;
+			buildPhases = (
+				04E751A416D0B7B6004F1BF4 /* Sources */,
+				04E751A516D0B7B6004F1BF4 /* Frameworks */,
+				04E751A616D0B7B6004F1BF4 /* Resources */,
+				04E7521916D0C05E004F1BF4 /* CopyFiles */,
+				04E7523C16D0C626004F1BF4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04E7523B16D0C5E9004F1BF4 /* PBXTargetDependency */,
+				04E7521816D0C055004F1BF4 /* PBXTargetDependency */,
+			);
+			name = mach_inject_finder;
+			productName = mach_inject_finder;
+			productReference = 04E751A816D0B7B6004F1BF4 /* mach_inject_finder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04E7522816D0C3E6004F1BF4 /* mach_inject_finder_plugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04E7523316D0C3E7004F1BF4 /* Build configuration list for PBXNativeTarget "mach_inject_finder_plugin" */;
+			buildPhases = (
+				04E7522516D0C3E6004F1BF4 /* Sources */,
+				04E7522616D0C3E6004F1BF4 /* Frameworks */,
+				04E7522716D0C3E6004F1BF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mach_inject_finder_plugin;
+			productName = mach_inject_finder_plugin;
+			productReference = 04E7522916D0C3E6004F1BF4 /* mach_inject_finder_plugin.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04E7519F16D0B7B6004F1BF4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "http://www.tanhao.me";
+			};
+			buildConfigurationList = 04E751A216D0B7B6004F1BF4 /* Build configuration list for PBXProject "mach_inject_finder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 04E7519D16D0B7B6004F1BF4;
+			productRefGroup = 04E751A916D0B7B6004F1BF4 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 04E7520916D0BE59004F1BF4 /* Products */;
+					ProjectRef = 04E7520816D0BE59004F1BF4 /* mach_inject_bundle.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				04E751A716D0B7B6004F1BF4 /* mach_inject_finder */,
+				04E7522816D0C3E6004F1BF4 /* mach_inject_finder_plugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		04E7521416D0BE59004F1BF4 /* mach_inject_bundle.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = mach_inject_bundle.framework;
+			remoteRef = 04E7521316D0BE59004F1BF4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04E751A616D0B7B6004F1BF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E751B716D0B7B6004F1BF4 /* InfoPlist.strings in Resources */,
+				04E751BD16D0B7B6004F1BF4 /* Credits.rtf in Resources */,
+				04E751C316D0B7B6004F1BF4 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04E7522716D0C3E6004F1BF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E7523116D0C3E7004F1BF4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04E751A416D0B7B6004F1BF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E751B916D0B7B6004F1BF4 /* main.m in Sources */,
+				04E751C016D0B7B6004F1BF4 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04E7522516D0C3E6004F1BF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E7523816D0C50C004F1BF4 /* Inject-PrincipalClass.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04E7521816D0C055004F1BF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = mach_inject_bundle;
+			targetProxy = 04E7521716D0C055004F1BF4 /* PBXContainerItemProxy */;
+		};
+		04E7523B16D0C5E9004F1BF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04E7522816D0C3E6004F1BF4 /* mach_inject_finder_plugin */;
+			targetProxy = 04E7523A16D0C5E9004F1BF4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04E751B516D0B7B6004F1BF4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04E751B616D0B7B6004F1BF4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		04E751BB16D0B7B6004F1BF4 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04E751BC16D0B7B6004F1BF4 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		04E751C116D0B7B6004F1BF4 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04E751C216D0B7B6004F1BF4 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		04E7522F16D0C3E7004F1BF4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04E7523016D0C3E7004F1BF4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04E751C416D0B7B6004F1BF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		04E751C516D0B7B6004F1BF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		04E751C716D0B7B6004F1BF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mach_inject_finder/mach_inject_finder-Prefix.pch";
+				INFOPLIST_FILE = "mach_inject_finder/mach_inject_finder-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = ../build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		04E751C816D0B7B6004F1BF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mach_inject_finder/mach_inject_finder-Prefix.pch";
+				INFOPLIST_FILE = "mach_inject_finder/mach_inject_finder-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = ../build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		04E7523416D0C3E7004F1BF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mach_inject_finder_plugin/mach_inject_finder_plugin-Prefix.pch";
+				INFOPLIST_FILE = "mach_inject_finder_plugin/mach_inject_finder_plugin-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = ../build;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		04E7523516D0C3E7004F1BF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mach_inject_finder_plugin/mach_inject_finder_plugin-Prefix.pch";
+				INFOPLIST_FILE = "mach_inject_finder_plugin/mach_inject_finder_plugin-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = ../build;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04E751A216D0B7B6004F1BF4 /* Build configuration list for PBXProject "mach_inject_finder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04E751C416D0B7B6004F1BF4 /* Debug */,
+				04E751C516D0B7B6004F1BF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04E751C616D0B7B6004F1BF4 /* Build configuration list for PBXNativeTarget "mach_inject_finder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04E751C716D0B7B6004F1BF4 /* Debug */,
+				04E751C816D0B7B6004F1BF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04E7523316D0C3E7004F1BF4 /* Build configuration list for PBXNativeTarget "mach_inject_finder_plugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04E7523416D0C3E7004F1BF4 /* Debug */,
+				04E7523516D0C3E7004F1BF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04E7519F16D0B7B6004F1BF4 /* Project object */;
+}
